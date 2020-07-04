@@ -30,6 +30,8 @@ async def help(ctx):
 
     embed.set_author(name='Help')
     embed.add_field(name='.ping', value='Returns Pong!', inline=False)
+    embed.add_field(name='.hello', value='Returns a nice message', inline=False)
+    embed.add_field(name='.summer', value='Returns a vacation quote', inline=False)
 
     await author.send(embed=embed)
 
