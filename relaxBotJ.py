@@ -16,7 +16,7 @@ async def on_message(message):
     if message.content.startswith("hello"):
         await message.channel.send("Hello, I am a test bot.")
 
-@client.commands()
+@userCommands.command()
 async def ping(ctx):
     await ctx.send('Pong!')
 
