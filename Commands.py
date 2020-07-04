@@ -1,7 +1,10 @@
 #This code is to configure relaxBot
 import discord
-import random
 from discord.ext import commands
+from discord.utils import get
+import random
+import os
+
 
 TOKEN = 'NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg'
 client = commands.Bot(command_prefix = '.')
@@ -13,8 +16,15 @@ async def on_ready():
 
 @client.command()
 async def join(ctx):
-    channel = ctx.author.voice.channel
-    await channel.connect()
+    channel = ctx.message.author.voice.channel
+    voice = get(client.voice_client, guild=ctx.guild)
+
+    if voice and voice.is_connected():
+        await voice.move_to(channel)
+    else:
+        voice = await channel.connect()
+        print(f"The bot has connected to {channel}\n")
+    await ctx.send(f"Joined {channel}")
 
 @client.command()
 async def leave(ctx):
