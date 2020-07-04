@@ -11,7 +11,7 @@ async def on_ready():
 #Clear command if we want it. Requires some bot permissons
 #@client.command()
 #async def clear(ctx, amount=5):
-    #await ctx.channel.purge(limit=amount)
+    #await ctx.channel.purge(limit=amount + 1)
 
 #Ping command if we want it.
 #@client.command()
