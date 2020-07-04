@@ -12,7 +12,7 @@ async def on_ready():
 
 @client.command(pass_context=True)
 async def join(ctx):
-    channel = ctx.message.author.voice.voice_channel
+    channel = ctx.message.author.join_voice_channel
     await client.join_voice_channel(channel)
 client.run(TOKEN)
 
