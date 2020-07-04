@@ -2,7 +2,7 @@
 import os
 import discord
 
-@client.event
+@Client.event
 async def on_message(message):
     message.content.lower()
     if message.author == client.user:
