@@ -4,4 +4,4 @@ import discord
 
 client = discord.Client()
 
-client.run('NzI4NzY5NTQ5NjUwMTAwMjY1.XwCd-A.t_PADGawrsLIVkQMkHrGtC9lEjw')
+client.run('NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg')
