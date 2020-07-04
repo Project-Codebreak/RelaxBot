@@ -20,3 +20,6 @@ async def join(ctx):
 async def leave(ctx):
     await ctx.voice_client.disconnect()
 
+
+client.run(TOKEN)
+
