@@ -10,9 +10,13 @@ client = commands.Bot(command_prefix = '.')
 async def on_ready():
     print('The bot is ready to start the vibes :)')
 
-@client.command(pass_context=True)
+@client.command()
 async def join(ctx):
-    channel = ctx.message.author.join_voice_channel
-    await client.join_voice_channel(channel)
+    channel = ctx.author.voice.channel
+    await channel.connect()
+
+@client.command()
+async def leave(ctx):
+    await ctx.voice_client.disconnect()
 client.run(TOKEN)
 
