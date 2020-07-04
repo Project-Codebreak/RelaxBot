@@ -8,9 +8,15 @@ client = commands.Bot(command_prefix = '.')
 async def on_ready():
     print("Bot is ready.")
 
-@client.command()
-async def ping(ctx):
-    await ctx.send(f"Pong! {round (client.latency * 1000)}ms")
+#Clear command if we want it. Requires some bot permissons
+#@client.command()
+#async def clear(ctx, amount=5):
+    #await ctx.channel.purge(limit=amount)
+
+#Ping command if we want it.
+#@client.command()
+#async def ping(ctx):
+    #await ctx.send(f"Pong! {round (client.latency * 1000)}ms")
 
 @client.command()
 async def hello(ctx):
