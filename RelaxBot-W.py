@@ -12,6 +12,10 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send(f"Pong! {round (client.latency * 1000)}ms")
 
+@client.command()
+async def hello(ctx):
+    await ctx.send("Hello there!")
+
 @client.command(aliases=['summerQuotes'])
 async def summer(ctx):
     responses = ['Friends, sun, sand, and sea, that sounds like summer to me. -Unknown',
