@@ -26,7 +26,7 @@ async def summer(ctx):
                 'Time is precious. Waste it wisely -Unknown',
                 'A vacation is having nothing to do and having all day to do it -Robert Orben',
                 'If you never go, you will never know -Unknown',
-                "School's out. Summmer's in. Let the drama stop and the fun begin -Unknown"
+                "School's out. Summmer's in. Let the drama stop and the fun begin -Unknown",
                 'Time you enjoy wasting was not wasted -Unknown',
                 'Live in the sunshine, swim the sea, drink the wild air -Ralph Waldo',
                 'B.E.A.C.H Best Escape Anyone Can Have -Unknown']
