@@ -4,7 +4,7 @@ from discord.ext import commands
 from discord.utils import get
 import random
 import os
-
+from pip import pynacl
 
 TOKEN = 'NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg'
 client = commands.Bot(command_prefix = '.')
