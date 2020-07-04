@@ -1,7 +1,10 @@
 #This code is to configure relaxBot
 import discord
+from discord.ext import commands
 
 client = discord.Client()
+
+userCommands = commands.Bot(command_prefix= '~')
 
 @client.event
 async def on_message(message):
