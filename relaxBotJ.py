@@ -7,6 +7,10 @@ client = discord.Client()
 userCommands = commands.Bot(command_prefix= '~')
 
 @client.event
+async def on_ready():
+    print('Bot is ready.')
+
+@client.event
 async def on_message(message):
     message.content.lower()
     if message.content.startswith("hello"):
@@ -14,7 +18,7 @@ async def on_message(message):
 
 @client.command()
 async def ping(ctx):
-    await ctx.send('Pong!') 
+    await ctx.send('Pong!')
 
 client.run('NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg')
 
