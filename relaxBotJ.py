@@ -11,7 +11,7 @@ async def on_message(message):
         return
     if message.content.startswith("hello"):
         await message.channel.send("Hello, I am a test bot.")
-    if message.author == "Wessymessy.f#1893":
+    if message.author == "Wessymessy#1893":
         await message.channel.send("No. Go Away.")
 
 
