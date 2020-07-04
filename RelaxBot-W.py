@@ -12,17 +12,17 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send(f"Pong! {round (client.latency * 1000)}ms")
 
-@client.command(aliases=['8ball'])
-async def _8ball(ctx, *, question):
-    responses = ['It is certain.',
-                'It is decidedly so.',
-                'Without a doubt.',
-                'Yes – definitely.',
-                'You may rely on it.',
-                'As I see it, yes.',
-                'Most likely.',
-                'Outlook good.',
-                'Yes.',
+@client.command(aliases=[summerQuotes])
+async def summer(ctx):
+    responses = ['Friends, sun, sand, and sea, that sounds like summer to me.',
+                "It's summer and time for wandering...",
+                'Smell the sea and feel the sky, let your soul and spirit fly',
+                'Take your vacation and let them miss you',
+                'I need a six month vacation twice a year',
+                'Happiness consists of living each day as if it were the first day of your honeymoon and the last day of your vacatoin',
+                "A vacation is what you take when you can no longer take what you've been taking",
+                'Unplug',
+                'Time for some vitamin sea',
                 'Signs point to yes.',
                 'Reply hazy, try again.',
                 'Ask again later.',
@@ -34,6 +34,6 @@ async def _8ball(ctx, *, question):
                 'My sources say no.',
                 'Outlook not so good.',
                 'Very doubtful.']
-    await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
+    await ctx.send(f'{random.choice(responses)}')
     
 client.run('NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg')
