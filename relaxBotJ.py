@@ -8,10 +8,6 @@ async def on_message(message):
     message.content.lower()
     if message.content.startswith("hello"):
         await message.channel.send("Hello, I am a test bot.")
-    if str(message.author) == "Wessymessy#1893":
-        await message.channel.send("No. Go Away.")
-    if str(message.author) == "Raging_Beast#4944":
-        await message.channel.send("Hi! You're Awesome!")
 
 client.run('NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg')
 
