@@ -2,11 +2,13 @@ import discord
 import random
 from discord.ext import commands
 
+TOKEN = "NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg"
 client = commands.Bot(command_prefix = '.')
+client.remove_command('help')
 
 @client.event
 async def on_ready():
-    print("Bot is ready.")
+    print("Vibin' ready!")
 
 #Clear command if we want it. Requires some bot permissons
 #@client.command()
@@ -17,6 +19,19 @@ async def on_ready():
 #@client.command()
 #async def ping(ctx):
     #await ctx.send(f"Pong! {round (client.latency * 1000)}ms")
+
+@client.command(pass_context=True)
+async def help(ctx):
+    author = ctx.message.author
+
+    embed = discord.Embed(
+        color = discord.Colour.orange()
+    )
+
+    embed.set_author(name='Help')
+    embed.add_field(name='.ping', value='Returns Pong!', inline=False)
+
+    await client.send_message(author, embed=embed)
 
 @client.command()
 async def hello(ctx):
@@ -42,4 +57,4 @@ async def summer(ctx):
                 'B.E.A.C.H Best Escape Anyone Can Have -Unknown']
     await ctx.send(f'{random.choice(responses)}')
     
-client.run('NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg')
+client.run(TOKEN)
