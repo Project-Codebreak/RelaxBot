@@ -16,11 +16,9 @@ async def on_ready():
 
 @client.command()
 async def join(ctx):
-    async def join(ctx):
-        channel = ctx.message.author.voice.channel
-        await client.join_voice_channel(channel)
-
-    print('Bot joined the channel.')
+     channel = ctx.message.author.voice.channel
+     await client.join_voice_channel(channel)
+     print('Bot joined the channel.')
 
 
 client.run(TOKEN)
