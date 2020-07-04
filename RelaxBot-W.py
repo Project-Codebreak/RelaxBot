@@ -31,7 +31,7 @@ async def help(ctx):
     embed.set_author(name='Help')
     embed.add_field(name='.ping', value='Returns Pong!', inline=False)
 
-    await client.send_message(author, embed=embed)
+    await author.send(embed=embed)
 
 @client.command()
 async def hello(ctx):
