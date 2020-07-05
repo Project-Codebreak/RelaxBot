@@ -3,7 +3,7 @@ import random
 from discord.ext import commands
 
 TOKEN = "NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg"
-client = commands.Bot(command_prefix = '.')
+client = commands.Bot(command_prefix = '$')
 client.remove_command('help')
 
 @client.event
@@ -29,8 +29,8 @@ async def help(ctx):
     )
 
     embed.set_author(name='Help')
-    embed.add_field(name='.ping', value='Returns Pong!', inline=False)
-    embed.add_field(name='.hello', value='Returns a nice message', inline=False)
+    embed.add_field(name='.ping', value='Returns Pong', inline=False)
+    embed.add_field(name='.hello', value='Says hello back', inline=False)
     embed.add_field(name='.summer', value='Returns a vacation quote', inline=False)
 
     await author.send(embed=embed)
