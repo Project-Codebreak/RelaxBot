@@ -2,7 +2,6 @@ import discord
 import random
 from discord.ext import commands
 
-TOKEN = "NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg"
 client = commands.Bot(command_prefix = '$')
 client.remove_command('help')
 
