@@ -5,7 +5,7 @@ from discord.utils import get
 import random
 import os
 
-TOKEN = 'NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg'
+TOKEN = ''
 client = commands.Bot(command_prefix = '$')
 
 @client.event
