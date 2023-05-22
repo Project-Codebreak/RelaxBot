@@ -1,4 +1,7 @@
 #The main file for relaxBot
+
+TOKEN = ''
+
 client = commands.Bot(command_prefix = '$')
 client.remove_command('help')
 
@@ -54,9 +57,6 @@ async def summer(ctx):
                 'Live in the sunshine, swim the sea, drink the wild air -Ralph Waldo',
                 'B.E.A.C.H Best Escape Anyone Can Have -Unknown']
     await ctx.send(f'{random.choice(responses)}')
-    
- TOKEN = 'NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg'
-client = commands.Bot(command_prefix = '$')
 
 @client.event
 async def on_ready():
