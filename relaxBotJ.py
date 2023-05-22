@@ -15,4 +15,4 @@ async def on_message(message):
         await message.channel.send("No. Go Away.")
 
 
-client.run('NzI4NzY5NTQ5NjUwMTAwMjY1.XwCiWQ.VTmc5_t6aPcCAxmeYbXuz71C-Lg')
+client.run('')
