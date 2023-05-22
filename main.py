@@ -38,6 +38,7 @@ async def help(ctx):
 async def hello(ctx):
     await ctx.send("Hello there!")
 
+# Wes's/Collab Code
 @client.command(aliases=['summerQuotes'])
 async def summer(ctx):
     responses = ['Friends, sun, sand, and sea, that sounds like summer to me. -Unknown',
